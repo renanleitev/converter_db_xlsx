@@ -3,7 +3,8 @@ import sqlite3
 # Criando o arquivo Excel (alterar o caminho e o nome do arquivo)
 filepath = r'C:\Users\caminho_do_arquivo\nome_do_arquivo_em_excel.xlsx' # noqa
 # Conectando na base de dados (alterar o caminho e o nome do arquivo)
-con = sqlite3.connect(r'C:\Users\caminho_da_base_de_dados\nome_da_base_de_dados.db') # noqa
+databasepath = r'C:\Users\caminho_da_base_de_dados\nome_da_base_de_dados.db'
+con = sqlite3.connect(databasepath) # noqa
 # Iniciando o processo de escrita no Excel
 writer = pd.ExcelWriter(filepath, engine='xlsxwriter')
 # Obtendo o nome das tabelas na base de dados e salvando os dados
