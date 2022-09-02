@@ -1,9 +1,9 @@
 import pandas as pd
 import sqlite3
-# Criando o arquivo Excel
-filepath = r'C:\Users\renan\Documents\Programação\VsCode\Python\Projetos\Laura-Andressa\Planilha_Processos.xlsx' # noqa
-# Conectando na base de dados
-con = sqlite3.connect(r'C:\Users\renan\Documents\Programação\VsCode\Python\Projetos\Laura-Andressa\laura.db') # noqa
+# Criando o arquivo Excel (alterar o caminho e o nome do arquivo)
+filepath = r'C:\Users\caminho_do_arquivo\nome_do_arquivo_em_excel.xlsx' # noqa
+# Conectando na base de dados (alterar o caminho e o nome do arquivo)
+con = sqlite3.connect(r'C:\Users\caminho_da_base_de_dados\nome_da_base_de_dados.db') # noqa
 # Iniciando o processo de escrita no Excel
 writer = pd.ExcelWriter(filepath, engine='xlsxwriter')
 # Obtendo o nome das tabelas na base de dados e salvando os dados
