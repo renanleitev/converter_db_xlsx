@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 
-con = sqlite3.connect("laura.db")
+con = sqlite3.connect("nome_do_banco_de_dados.db")
 # Editar o caminho do arquivo
 wb=pd.ExcelFile(r'C:\caminho_do_arquivo\arquivo_excel.xlsx') # noqa
 for sheet in wb.sheet_names:
